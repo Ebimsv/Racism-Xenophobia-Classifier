@@ -16,12 +16,13 @@ In the data collection phase of the Racism-Xenophobia-Classifier project, the go
 ### Sampling Methods
 
 ![alt text](https://github.com/Ebimsv/Racism-Xenophobia-Classifier/blob/main/pics/sampling.png)
+(https://github.com/Ebimsv/Torch-Linguist/blob/main/pics/RNN.png)
 
 Sampling methods can be utilized during data collection to ensure the dataset captures a wide range of examples and maintains a balanced representation. Here are a few scenarios where sampling methods can be beneficial:
 
 <details>
   <summary><b>1. Random Sampling</b></summary><br/>
-Random sampling involves selecting data points from a larger pool without any specific pattern or bias. It ensures a diverse representation of text by capturing a wide range of examples. For the Racism-Xenophobia-Classifier project, random sampling can be used to collect sentences from various sources to avoid favoring specific contexts or demographics.
+Random sampling involves selecting data points from a larger pool without any specific pattern or bias. It ensures a diverse representation of text by capturing a wide range of examples. For the Racism-Xenophobia-Classifier project, random sampling can be used to collect sentences from various sources to avoid favoring specific contexts or demographics.  
 
 **Advantages**
 - Easy to implement.
@@ -47,7 +48,7 @@ The population is divided into subgroups (strata) based on specific characterist
 **Disadvantages**
 - Information must be gathered before being able to divide the population into subgroups.
 
-## Worked Example
+#### Worked Example
 A school of 1000 students are classified as follows:
 
 57 % Brunette,  
@@ -56,7 +57,7 @@ A school of 1000 students are classified as follows:
 
 Find a stratified sample of 200 students for this population.
 
-**Solution**  
+**Solution:**  
 Suppose we are interested in how each of these groups will react to this statement: everyone in this school has an equal chance of success. Relying on a random sample may under-represent the minority populations of the school (people with blonde hair). By grouping our population by hair colour, we can choose a sample ensuring each group is represented according to its proportion of the population. So 57 % of the sample should be brunette, 29 % should be redhead and 14 % blonde. Within each group (strata) you select your sample randomly. As our sample consists of 200 people, 114 should be brunette, 58 should be redhead and 28 should be blonde.
 </details>
 
@@ -74,12 +75,12 @@ Clustered sampling involves dividing the population into clusters or groups, and
 - It is not a genuine random sample.  
 - The sample size is smaller and from thus the sample is likely to be less representative of the population.  
 
-**Example**
+**Example**  
 The children in a classroom are divided up depending on which table they sit at. A sample can be obtained from this classroom by choosing **n** number of tables to represent the class.
 </details>
 
 <details>
-  <summary><b>5. Convenience Sampling</b></summary><br/>
+  <summary><b>4. Convenience Sampling</b></summary><br/>
 Convenience sampling involves collecting data from readily available sources or individuals that are easily accessible. In the context of the Racism-Xenophobia-Classifier project, convenience sampling may involve collecting data from social media platforms, online forums, or public discussions where instances of racism and xenophobia are frequently observed.
 </details>
 
@@ -113,7 +114,7 @@ Here are different types of data collection methods commonly used:
 
 8. **Ethnography**: Ethnography involves immersing oneself in a particular cultural or social group to understand their behavior, beliefs, and practices. It typically involves participant observation, interviews, and document analysis. Ethnography provides in-depth, context-rich insights into the studied group's perspectives and experiences.
 
-In the data collection phase of the Racism-Xenophobia-Classifier project, we will employ a combination of surveys, interviews, and document analysis to gather data on real-life experiences and perceptions of racism and xenophobia among diverse individuals.
+This table shows a summary about mentioned methods:
 
 
 | Method                | When to Use                                          | How to Collect Data                                                                 |
@@ -127,123 +128,67 @@ In the data collection phase of the Racism-Xenophobia-Classifier project, we wil
 | Document Analysis     | To analyze written, visual, or audio materials        | Examine reports, articles, or social media content for relevant information          |
 | Ethnography           | To understand behavior and beliefs in a cultural group| Immerse oneself in the cultural or social group, observe, and interact with participants |
 
+### Useful Datasets for Racism and Xenophobia Detection
+In this section, I present information on datasets that have been used for *hate speech* detection or related concepts such as *cyberbullying*, *abusive language*, *online harassment*, among others, to make it easier for researchers to obtain datasets.
+Even when there are several social media platforms to get data from, the construction of a balanced labeled dataset is a costly task in time and effort, and it is still a problem for the researchers in the area. Although most of the below-listed datasets are not explicitly available, some of them can be obtained from the authors if requested.
+
+
+### English
+|  No|           Datasets                    (Link to paper)          |          Objects          |             Size             |                                                   Available                                                    |                                                Labels                                                 | Comment
+| :----:| :--------------------------: | :-----------------------: | :--------------------------: | :------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------: |:----------------------------------------------------------------------------------------------------: |
+|1|     [Dinakar et al., 2011](https://ie.technion.ac.il/~roiri/papers/3841-16937-1-PB.pdf)     |     YouTube Comments      |             6000             |                                                       -                                                         |                                 Sexuality, Race, Culture, Intelligence                                  |
+|2|    [Dadvar and Jong, 2012](https://ris.utwente.nl/ws/portalfiles/portal/5512243/DIR12_reviewed04.pdf)     |       Myspace Posts       |             2200             |                                                       -                                                      |                                         Bullying, Non Bullying                                         |
+|3|      [Huang et al., 2014](https://wp.comminfo.rutgers.edu/vsingh/wp-content/uploads/sites/110/2016/10/p3-huang-1.pdf)      |          Tweets           |             4865             |                                                       -                                                       |                                         Bullying, Non Bullying                                         |
+|4|  [Hosseinmardi et al., 2015](https://www.cs.colorado.edu/~rhan/Papers/socinfo2015_labeled.pdf)   | Instagram Media Sessions  |             998              |                                                       -                                                          |                                         bullying, Non bullying                                         |
+|5|    [Waseem and Hovy, 2016](https://www.aclweb.org/anthology/N16-2013.pdf)     |          Tweets           |            16914             |                             [Download](https://github.com/zeerakw/hatespeech)                             |                                             Racist, Sexist, Either                                          |
+|6|         [Waseem, 2016](https://www.aclweb.org/anthology/W16-5618.pdf)         |          Tweets           |             6909             |                             [Download](https://github.com/zeerakw/hatespeech)                             |                                      Racist, Sexist, Either,Both                                       |
+|7|     [Nobata et al., 2016](http://www.yichang-cs.com/yahoo/WWW16_Abusivedetection.pdf)      |      Yahoo Comments       |             2000             |                                                       -                                                       |                                             Abusive, Clean                                             |
+|8|    [Chatzakou et al., 2017](https://arxiv.org/abs/1702.06877)    |       Twitter Users       |             9484             |                                                       -                                                       |                                       Aggressor, Bully, Spammer                                        |
+|9|    [Davidson et al., 2017](https://arxiv.org/pdf/1703.04009.pdf)     |          Tweets           |            24802            | [Download](https://github.com/t-davidson/hate-speech-and-offensive-language/blob/master/data/labeled_data.csv)    |                                    hate\_speech, offensive, neither                                    |
+|10|     [Golbeck et al., 2017](http://www.cs.umd.edu/~golbeck/papers/trolling.pdf)     |          Tweets           |            35000             |                                                       -                                                       |                                       Harassing, Non Harassing                                        |
+|11|      [Wulczyn et al. 2017](http://papers.www2017.com.au.s3-website-ap-southeast-2.amazonaws.com/proceedings/p1391.pd)   |     Wikipedia Comments     |             100000             |                                                       [Download](figshare.com/articles/Wikipedia_Detox_Data/4054689t)                                                        |                                   Personal Attacks
+|12| [Tahmasbi and Rastegari, 2018](https://dl.acm.org/doi/10.1145/3290838) |          Tweets           |            12837            |                                                       -                                                       |                                         Bullying, Non Bullying                                         |
+|13|    [Anzovino et al., 2018](https://link.springer.com/chapter/10.1007/978-3-319-91947-8_6)     |          Tweets           |             4454             |                                                       -                                                       | Discredit, Stereotype, Objectification, Sexual_Harassment, Threats of Violence, Dominance, Dearailingy |
+|14|     [Founta et al., 2018](https://datalab.csd.auth.gr/wp-content/uploads/publications/17909-77948-1-PB.pdf)      |          Tweets           |            80000             |          [Download](https://dataverse.mpi-sws.org/dataset.xhtml?persistentId=doi:10.5072/FK2/ZDTEMN)          |                                      Hate Speech, Offensive, None                                      |
+|15|     [Gibert et al., 2018](https://www.aclweb.org/anthology/W18-5102.pdf)      | Sentences from Stormfront |            10568             |                       [Download](https://github.com/aitor-garcia-p/hate-speech-dataset)                       |                                 Hate Speech, Non Hate Speech                                      |
+|16|       [SemEval19, 2019](https://www.aclweb.org/anthology/S19-2007.pdf)        |          Tweets           |             9000             |                                                       [Request Link](http://hatespeech.di.unito.it/hateval.html)                                                       |                                          Hate speech, Non Hate Speech                                      |
+|17|      [OLID 2019](https://www.aclweb.org/anthology/N19-1144.pdf)    |     Tweets     |             14100             |                                                       [Download](https://competitions.codalab.org/competitions/20011#participate)                                                        |                Offensive, Non Offensive
+|18|      [TREC2 2020](https://arxiv.org/ftp/arxiv/papers/2003/2003.07428.pdf)    |     Messages (Twitter,Facebook,Youtube)     |             4,263             |                                                       [Request Form](https://docs.google.com/forms/d/e/1FAIpQLSesLjGKLQlE3dmQNZUEl5QJVno7NngeLTP9XvIMCvpZu7sXNg/viewform)    |   Misogynous (GEN,NGEN), AGGRESSION LEVEL(OAG, CAG, NAG) | Data GeoLocated India
+|19|      [meTooMA 2020](https://ojs.aaai.org/index.php/ICWSM/article/view/7292/7146)    |     Tweets     |            9,973             |                                                       [Download](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/JN4EYU)    |   Hate Speech (Directed, Generalized), Relevance (0,1), STANCE (Support, Opposition, Neither) | Data GeoLocated India, Australia, Kenya, Iran, UK
+
+
+### Multilingual (Parallel Data)
+|  No|           Datasets                    (Link to paper)          |          Objects          |             Size             |                                                   Available                                                    |   Language    |                                                 Labels                                                 |
+| :----:| :--------------------------: | :-----------------------: | :--------------------------: | :------------------------------------------------------------------------------------------------------------: | :-----------: | :----------------------------------------------------------------------------------------------------: |
+|1|   [XHate 999](https://www.repository.cam.ac.uk/handle/1810/315111)    |Tweets from previous published English datasets and translated to 5 languages|   600 (x  6 languages)|                                                       [Download](https://github.com/codogogo/xhate)  |English, German, Russian, Croatian, Albanian, Turkish  | sexism, racism, toxicity, hatefulness, aggression, attack, cyberbullying, misogyny, obscenity, threats, and insults.
+
+
+and this is another links for finding related dataset:
+
+| Dataset Name                                 | Description                                                   | Language | Classes     | Source          | Download |
+| -------------------------------------------- | --------------------------------------------------------------| ---------| ------------| ----------------|----------|
+| HateEval | Annotated tweets for hate speech and offensive language. | English | (women or immigrants) is hateful or not hateful | Twitter | https://competitions.codalab.org/competitions/19935 |
+
+| Wikipedia Talk Labels | User comments from Wikipedia talk pages annotated for toxicity.| English | toxic or healthy | Wikipedia | https://figshare.com/articles/dataset/Wikipedia_Talk_Labels_Toxicity/4563973/2 | 
+
+| Online Harassment Dataset (Wikimedia)| User comments from Wikimedia platforms annotated for harassment.| English | bullying or not | https://www.kaggle.com/datasets/saurabhshahane/cyberbullying-dataset | 
+              |
+| Cyberbullying Dataset | The data contain text and labeled as bullying or not. | English | Kaggle, Twitter, Wikipedia Talk | https://www.kaggle.com/datasets/saurabhshahane/cyberbullying-dataset |
+| Hate Speech and Offensive Language Dataset | The text is classified as: hate-speech, offensive, and neither| English  |0 - hate speech 1 - offensive language 2 - neither| Twitter | https://www.kaggle.com/datasets/mrmorj/hate-speech-and-offensive-language-dataset/data |
+
 # Step 3: Advancements and types of Language Models:  
 
 ## Different types of language models:
-The research of LM has received extensive attention in the literature, which can be divided into four major development stages:
-
-<details>
-  <summary><b>1. Statistical language models (SLM)</b></summary><br/>
-</details>
-
-<details>
-  <summary><b>2. Neural language models (NLM)</b></summary><br/>
-</details> 
-
-## Different training approaches of Language model:
-
-<details>
-  <summary><b>1. Causal Language Models (e.g., GPT-3)</b></summary><br/>
-</details>
-
-<details>
-  <summary><b>2. Masked Language Models (e.g., BERT)</b></summary><br/>
-</details>
-
-<details>
-  <summary><b>3. Sequence-to-Sequence Models (e.g., T5)</b></summary><br/>
-</details>
-
-<details>
-  <summary><b>What's the difference between Causal Language Modeling and Masked Language Modeling?</b></summary><br/>
-  
-</details>
-
-## Different Types of Models for Language Modeling  
-
-Language modeling involves building models that can generate or predict sequences of words or characters. 
-Here are some different types of models commonly used for language modeling:  
-
-<details>
-  <summary><b>1. N-gram Language Models</b></summary><br/>
-</details>
-
-<details>
-  <summary><b>2. Recurrent Neural Network (RNN)</b></summary><br/>
-
-**Advantages of RNNs**:
-
-  1. Ability to capture sequential dependencies and context.
-  2. Flexibility in handling variable-length input and output sequences.
-  3. Suitable for tasks such as text generation, speech recognition, and language translation.
-
-**Disadvantages of RNNs**:
-
-  1. Difficulty in learning long-term dependencies due to the vanishing/exploding gradient problem.
-  2. Limited contextual understanding of complex linguistic structures.
-  3. Sequential nature limits parallelization, leading to slower processing times.   
-
-![alt text](https://github.com/Ebimsv/Torch-Linguist/blob/main/pics/RNN.png)
-
-
-</details>
-
-<details>
-  <summary><b>3. Long Short-Term Memory (LSTM)</b></summary><br/>
-</details>
-
-<details>
-  <summary><b>4. Gated Recurrent Unit (GRU)</b></summary><br/>
-</details>
-
-<details>
-  <summary><b>5. comparing RNN, LSTM, and GRU</b></summary><br/>
-</details>
-
-<details>
-  <summary><b>6. Transformer models</b></summary><br/>
-</details>
-
-
-# Step 3: Choose the appropriate method: Language Modeling with Embedding Layer and LSTM
-
-## This is the diagram of proposed model  
-
-![alt text](https://github.com/Ebimsv/Torch-Linguist/blob/main/pics/LM.png)
 
 # Step 4: Implementation of the selected method
 ## Dataset
 
 ### Prepare and preprocess data 
 
-<details>
-  <summary><b>1. Download WikiText-2 dataset</b></summary><br/>
-</details>
-
-<details>
-  <summary><b>Tokenize data, building and saving vocabulary </b></summary><br/>
-</details>
-
-### Exploratory Data Analysis (EDA)
-
-<details>
-  <summary><b>1. Analyzing Mean Sentence Length in Wikitext-2 </b></summary><br/>
-![alt text](https://github.com/Ebimsv/Torch-Linguist/blob/main/pics/EDA-mean-sentences.png)
-  </details>
-
-<details>
-<summary><b>2. Custom dataset</b></summary><br/>
-</details>
-
-## Model
-
-<details>
-<summary><b>Custom PyTorch Language Model with Flexible Embedding Options</b></summary><br/>
-</details>
-
 # References
 
 1. https://www.ncl.ac.uk/webtemplate/ask-assets/external/maths-resources/statistics/sampling/types-of-sampling.html
+2. https://github.com/aymeam/Datasets-for-Hate-Speech-Detection/blob/master/README.md
 
 
 
