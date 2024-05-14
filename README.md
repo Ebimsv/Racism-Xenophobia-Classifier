@@ -168,11 +168,8 @@ and this is another links for finding related dataset:
 | Dataset Name                                 | Description                                                   | Language | Classes     | Source          | Download |
 | -------------------------------------------- | --------------------------------------------------------------| ---------| ------------| ----------------|----------|
 | HateEval | Annotated tweets for hate speech and offensive language. | English | (women or immigrants) is hateful or not hateful | Twitter | https://competitions.codalab.org/competitions/19935 |
-
 | Wikipedia Talk Labels | User comments from Wikipedia talk pages annotated for toxicity.| English | toxic or healthy | Wikipedia | https://figshare.com/articles/dataset/Wikipedia_Talk_Labels_Toxicity/4563973/2 | 
-
 | Online Harassment Dataset (Wikimedia)| User comments from Wikimedia platforms annotated for harassment.| English | bullying or not | https://www.kaggle.com/datasets/saurabhshahane/cyberbullying-dataset | 
-              |
 | Cyberbullying Dataset | The data contain text and labeled as bullying or not. | English | Kaggle, Twitter, Wikipedia Talk | https://www.kaggle.com/datasets/saurabhshahane/cyberbullying-dataset |
 | Hate Speech and Offensive Language Dataset | The text is classified as: hate-speech, offensive, and neither| English  |0 - hate speech 1 - offensive language 2 - neither| Twitter | https://www.kaggle.com/datasets/mrmorj/hate-speech-and-offensive-language-dataset/data |
 
