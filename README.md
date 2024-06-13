@@ -16,7 +16,6 @@ In the data collection phase of the Racism-Xenophobia-Classifier project, the go
 ### Sampling Methods
 
 ![alt text](https://github.com/Ebimsv/Racism-Xenophobia-Classifier/blob/main/pics/sampling.png)
-(https://github.com/Ebimsv/Torch-Linguist/blob/main/pics/RNN.png)
 
 Sampling methods can be utilized during data collection to ensure the dataset captures a wide range of examples and maintains a balanced representation. Here are a few scenarios where sampling methods can be beneficial:
 
@@ -86,34 +85,6 @@ Convenience sampling involves collecting data from readily available sources or 
 
 By applying these data collection methods to the Racism-Xenophobia-Classifier project, we can gather a diverse and representative dataset that covers various types of racism and xenophobia, captures informative examples, and avoids biases or limited perspectives.
 
-### Collecting and Organizing Data
-
-Here are the steps of collecting data for the Racism-Xenophobia-Classifier project:
-
-Data collection is the initial phase where textual content related to racism and xenophobia is gathered from various sources. The sources can be diverse, including social media platforms, online forums, news articles, blogs, and more, depending on the objectives of the text classification project. The goal is to compile a dataset that is representative of different types of racist and xenophobic statements, as well as non-racist and non-xenophobic content.
-
-**Source Diversity**: It's important to collect data from a variety of sources to ensure the dataset covers a wide range of linguistic styles, formats, and contexts in which racism and xenophobia can manifest. This diversity helps in building a robust model capable of accurately understanding and classifying racist and xenophobic texts across different scenarios, such as online discussions, news reports, and personal narratives.  
-
-**Domain-Specific Data**: While the project focuses on detecting racism and xenophobia in general, it may be beneficial to gather data from specific domains where these issues are prevalent, such as political discourse, social commentary, or historical accounts. This ensures that the model is trained on language and terminology specific to these domains, enhancing its accuracy and relevance in identifying racist and xenophobic statements in those contexts.
-
-Here are different types of data collection methods commonly used:
-
-1. **Surveys**: Surveys involve collecting data through a set of structured questions administered to individuals or groups. They can be conducted through various mediums such as online forms, telephone interviews, or in-person interviews. Surveys provide quantitative or qualitative information depending on the type of questions asked.
-
-2. **Interviews**: Interviews involve direct interaction with individuals or groups to gather information. They can be structured (where specific questions are asked) or unstructured (more conversational), and can be conducted face-to-face, over the phone, or through video calls. Interviews provide in-depth insights and allow for follow-up questions.
-
-3. **Observations**: Observations involve systematically watching and recording behaviors, events, or phenomena. Researchers may be passive observers, simply recording what they see, or they may engage in participant observation, actively participating in the observed activities. Observations can provide rich contextual information but may be influenced by the observer's presence.
-
-4. **Experiments**: Experiments involve manipulating variables to study cause-and-effect relationships. Data is collected under controlled conditions, often with a control group for comparison. Experiments are commonly used in scientific research to establish causal relationships between variables.
-
-5. **Existing Data Analysis**: Involves using pre-existing data collected for other purposes. This can include analyzing publicly available datasets, using data collected by government agencies or research institutions, or utilizing archival data. It provides a cost-effective way to answer research questions without collecting new data.
-
-6. **Case Studies**: Case studies involve in-depth and holistic analysis of a particular individual, group, organization, or phenomenon. They typically involve multiple data collection methods, such as interviews, observations, and document analysis. Case studies provide detailed insights into specific contexts or situations.
-
-7. **Document Analysis**: Document analysis involves the systematic examination of written, visual, or audio materials, such as **reports**, **articles**, **speeches**, or **social media** content. Document analysis is often combined with other methods for a comprehensive understanding.
-
-8. **Ethnography**: Ethnography involves immersing oneself in a particular cultural or social group to understand their behavior, beliefs, and practices. It typically involves participant observation, interviews, and document analysis. Ethnography provides in-depth, context-rich insights into the studied group's perspectives and experiences.
-
 This table shows a summary about mentioned methods:
 
 
@@ -171,7 +142,7 @@ and this is another links for finding related dataset:
 | Wikipedia Talk Labels | User comments from Wikipedia talk pages annotated for toxicity.| English | toxic or healthy | Wikipedia | https://figshare.com/articles/dataset/Wikipedia_Talk_Labels_Toxicity/4563973/2 | 
 | Online Harassment Dataset (Wikimedia)| User comments from Wikimedia platforms annotated for harassment.| English | bullying or not | https://www.kaggle.com/datasets/saurabhshahane/cyberbullying-dataset | 
 | Cyberbullying Dataset | The data contain text and labeled as bullying or not. | English | Kaggle, Twitter, Wikipedia Talk | https://www.kaggle.com/datasets/saurabhshahane/cyberbullying-dataset |
-| Hate Speech and Offensive Language Dataset | The text is classified as: hate-speech, offensive, and neither| English  |0 - hate speech 1 - offensive language 2 - neither| Twitter | https://www.kaggle.com/datasets/mrmorj/hate-speech-and-offensive-language-dataset/data |
+| Hate Speech and Offensive Language Dataset | The text is classified as: hate-speech, offensive, and neither| English | 0 - hate speech 1 - offensive language 2 - neither| Twitter | https://www.kaggle.com/datasets/mrmorj/hate-speech-and-offensive-language-dataset/data |
 
 # Step 3: Advancements and types of Language Models:  
 
